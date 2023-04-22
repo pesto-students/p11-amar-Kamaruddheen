@@ -3,38 +3,31 @@ nav a {
     padding-right: 10px;
 }
 
-.rating {
-    margin-top: 1em;
-    margin-bottom: 1em;
+section p {
+  margin-block-start: 1em;
+  margin-block-end: 0.4em;
 }
 
 .star {
-  position: relative;
+  font-size: xx-large;
+  width: 30px;
   display: inline-block;
-  width: 0;
-  height: 0;
-  margin-left: 0.9em;
-  margin-right: 0.9em;
-  margin-bottom: 1.2em;
-  border-right: 0.3em solid transparent;
-  border-bottom: 0.7em solid orange;
-  border-left: 0.3em solid transparent;
-  /* Controlls the size of the stars. */
-  font-size: larger;
+  color: transparent;
 }
-.star:before, .star:after {
-  content: "";
-  display: block;
-  width: 0;
-  height: 0;
+
+.star::before {
+  content:'\2605';
+}
+
+.star.on {
+  color: orange;
+}
+
+.star.half:after {
+  content:'\2605';
+  color: orange;
   position: absolute;
-  top: 0.6em;
-  left: -1em;
-  border-right: 1em solid transparent;
-  border-bottom: 0.7em solid orange;
-  border-left: 1em solid transparent;
-  transform: rotate(-35deg);
-}
-.star:after {
-  transform: rotate(35deg);
+  margin-left: -25px;
+  width: 15px;
+  overflow: hidden;
 }
