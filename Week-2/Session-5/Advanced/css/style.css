@@ -1,0 +1,33 @@
+/* Navbar spacing between each links */
+nav a {
+    padding-right: 10px;
+}
+
+section p {
+  margin-block-start: 1em;
+  margin-block-end: 0.4em;
+}
+
+.star {
+  font-size: xx-large;
+  width: 30px;
+  display: inline-block;
+  color: transparent;
+}
+
+.star::before {
+  content:'\2605';
+}
+
+.star.on {
+  color: orange;
+}
+
+.star.half:after {
+  content:'\2605';
+  color: orange;
+  position: absolute;
+  margin-left: -25px;
+  width: 15px;
+  overflow: hidden;
+}
