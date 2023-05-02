@@ -88,7 +88,40 @@ main > section {
 }
 
 /* TODO: Add media query for 600px breakpoint */
+@media only screen and (min-width: 600px) {
+   /* Features direction from col to row */
 
+   .benefits-container {
+      flex-direction: row;
+   }
+}
 /* TODO: Add media query for 700px breakpoint */
+@media only screen and (min-width: 700px) {
+   /* Header Style */
 
+   nav > li {
+      display: inline;
+   }
+
+   header > h1 {
+      font-size: 3rem;
+   }
+}
 /* TODO: Add media query for 800px breakpoint */
+@media only screen and (min-width: 800px) {
+   /* Images & Description */
+
+   .vacation-container {
+      display: flex;
+      flex-direction: row;
+   }
+
+   .vacation-container > img {
+      width: 50vw;
+
+   }
+
+   .vacation-container > div {
+      margin: 20px;
+   }
+}
